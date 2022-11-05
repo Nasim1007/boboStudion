@@ -198,6 +198,7 @@ html {
   .navbar-static {
     .main-menu {
       top: 0;
+      background: rgb(120, 175, 120);
     }
     .content {
       min-height: calc(100% - calc(#{$navbar-height} + #{$footer-height}));

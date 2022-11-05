@@ -161,7 +161,7 @@ const HorizontalLayout = (props) => {
             light={skin !== "dark"}
             dark={skin === "dark" || bgColorCondition}
             className={classnames(
-              `header-navbar navbar-horizontal navbar-shadow menu-border`,
+              "header-navbar navbar-horizontal navbar-shadow menu-border",
               {
                 [navbarClasses[navbarType]]: navbarType !== "static",
                 "floating-nav":
@@ -171,7 +171,7 @@ const HorizontalLayout = (props) => {
             )}
           >
             {menu ? (
-              menu({ menuData, routerProps, currentActiveItem })
+              menu({ menuData }, props.routerProps, props.currentActiveItem)
             ) : (
               <MenuComponent menuData={menuData} />
             )}

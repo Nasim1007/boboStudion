@@ -19,7 +19,7 @@ const VerticalMenuNavItems = (props) => {
     const TagName = Components[resolveNavItemComponent(item)]
     if (item.children) {
       return (
-        canViewMenuGroup(item) && (
+        props.canViewMenuGroup(item) && (
           <TagName item={item} index={index} key={item.id} {...props} />
         )
       )

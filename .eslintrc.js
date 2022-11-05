@@ -1,5 +1,6 @@
 module.exports = {
   parser: "@babel/eslint-parser",
+  extends: "eslint:recommended",
   env: {
     node: true,
     es6: true,
@@ -19,6 +20,8 @@ module.exports = {
    }
   },
   rules: {
+    "semi": ["error", "always"],
+    "quotes": ["error", "double"],
     'no-console': 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
 

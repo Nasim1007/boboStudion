@@ -1,4 +1,4 @@
-import { Mail, Home } from "react-feather"
+import { Mail, Home, Sun } from "react-feather"
 
 export default [
   {
@@ -16,7 +16,7 @@ export default [
   {
     id: "news",
     title: "Новости",
-    icon: "",
+    icon: <Sun size={20}/>,
     navLink: "/news"
   }
 ]
